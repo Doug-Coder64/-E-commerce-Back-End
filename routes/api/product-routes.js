@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
       }
     ]
   })
-  .then(dbCategory => res.json(dbCategory))
+  .then(product => res.json(product))
   .catch(err => {
     console.log(err);
     res.status(500).json(err);
@@ -43,12 +43,12 @@ router.get('/:id', (req, res) => {
       }
     ]  
   })
-  .then(dbProduct => {
-    if(!dbProduct) {
+  .then(product => {
+    if(!product) {
       res.status(404).json({message:'Missing Product'});
       return;
     }
-    res.json(dbCategory);
+    res.json(product);
   })
   .catch(err => {
     console.log(err);
@@ -138,12 +138,12 @@ router.delete('/:id', (req, res) => {
       id: req.params.id
     }
   })
-  .then(dbCategory => {
-    if(!dbCategory){
+  .then(product => {
+    if(!product){
       res.status(404).json({message: 'Product Missing'});
       return;
     }
-    res.json(dbCategory);
+    res.json(product);
   })
   .catch(err => {
     console.log(err);
