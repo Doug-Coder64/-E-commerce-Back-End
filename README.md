@@ -3,7 +3,6 @@
   
   [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-  ## Description
   This is a back end database for E-Commerce websites. Uses Sequelize to handle server requests.
   
   ## Table of Contents
@@ -13,7 +12,7 @@
  
   
 ## Installation 
- To install this project you will have to create a .env file with your mysql credentials, you will also have to run `npm install express mysql2 sequelize dotenv`
+ To install this project you will have to create a .env file with your mysql credenials, you will also have to run `npm install express mysql2 sequelize dotenv`
 
   
 
@@ -24,8 +23,9 @@
 
   
 
-  ## License 
- This Project is covered under the MIT
+## Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/Doug-Coder64/E-commerce-Back-End/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
   ## Questions 
  Questions about the project? 
